@@ -1,0 +1,6 @@
+{
+    "/admin": {
+    "target": "https://localhost:44357/",
+    "secure": false
+    }
+}

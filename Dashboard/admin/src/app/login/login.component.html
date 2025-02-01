@@ -1,0 +1,48 @@
+<style>
+
+main {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: inherit;
+    position: relative;
+  }
+
+
+  .content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 3rem;
+  }
+  
+
+</style>
+<main>
+<div class="content">
+<div class="mb-4 p-8">
+    <p-card  [style]="{ display: 'flex', justifyContent: 'center', border: '2px solid gray'}">
+       
+        <div class="card flex justify-center" [style]="{marginBottom:'20px'}">
+            <p-floatlabel>
+                <input id="username" type="text" pInputText [(ngModel)]="username"  />
+                <label for="username">username</label>
+            </p-floatlabel>
+        </div>
+        
+        <div class="card flex justify-center" [style]="{marginBottom:'20px'}">
+            <p-password id="password" type="text" [(ngModel)]="password" [feedback]="false" />
+        </div>
+
+        <div class="flex justify-center" [style]="{ display: 'flex', justifyContent: 'center' }">
+            <p-button label="Submit" (click)="onLogin()" />
+        </div>
+
+    </p-card>
+</div>
+</div>
+</main>
